@@ -1,3 +1,3 @@
-import './index.css';
+import './analytics.css';
 
 console.log("Hello, Webpack!")
