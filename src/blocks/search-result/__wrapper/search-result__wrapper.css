@@ -1,0 +1,19 @@
+.search-result__wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 104px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+    .search-result__wrapper {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .search-result__wrapper {
+        padding: 0 16px;
+    }
+}

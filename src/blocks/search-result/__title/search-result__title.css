@@ -1,0 +1,16 @@
+.search-result__title {
+    margin: 0;
+    color: #1A1B22;
+    font-size: 40px;
+    line-height: 46px;
+}
+
+@media screen and (max-width: 536px) {
+    .search-result__title {
+        max-width: 270px;
+        margin: 0 0 16px 0;
+        font-size: 30px;
+        line-height: 34px;
+        order: 0;
+    }
+}

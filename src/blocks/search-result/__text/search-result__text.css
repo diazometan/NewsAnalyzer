@@ -1,0 +1,9 @@
+.search-result__text {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: center;
+    color: #B6BCBF;
+    margin: 24px 0 0 0;
+    max-width: 356px;
+}

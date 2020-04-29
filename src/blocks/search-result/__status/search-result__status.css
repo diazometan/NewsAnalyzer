@@ -1,0 +1,8 @@
+.search-result__status {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: normal;
+    text-align: center;
+    color: #1A1B22;
+    margin: 24px 0 -8px;
+}

@@ -1,0 +1,18 @@
+.search__input {
+    width: 100%;
+    max-width: 608px;
+    min-height: 64px;
+    border-radius: 100px;
+    padding-left: 24px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 22px;
+    border: none;
+    outline: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .search__input {
+        min-height: 56px;
+    }
+}

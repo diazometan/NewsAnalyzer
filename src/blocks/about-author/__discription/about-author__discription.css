@@ -1,0 +1,4 @@
+.about-author__discription {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,7 @@
+.search-result__loading {
+    display: none;
+    min-height: 282px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

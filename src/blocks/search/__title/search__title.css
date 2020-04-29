@@ -1,0 +1,22 @@
+.search__title {
+    margin: 0 0 32px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 64px;
+}
+
+@media screen and (max-width: 1024px) {
+    .search__title {
+        max-width: 365px;
+        font-size: 36px;
+        line-height: 40px;
+        margin: 0 0 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .search__title {
+        max-width: 285px;
+    }
+}

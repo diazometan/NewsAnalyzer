@@ -1,0 +1,26 @@
+a.header__link_selected {
+    color: #fff;
+}
+
+.header__link_selected:before {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid white;
+    top: 48px;
+    width: 68px;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__link_selected:before {
+        top: 39px;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__link_selected:before {
+        top: 33px;
+        width: 61px;
+    }
+}
+

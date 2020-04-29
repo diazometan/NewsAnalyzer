@@ -1,0 +1,14 @@
+@import url(./__status/search-result__status.css);
+@import url(./__loading/search-result__loading.css);
+@import url(./__not-found/search-result__not-found.css);
+@import url(./__found/search-result__found.css);
+@import url(./__button/search-result__button.css);
+@import url(./__title/search-result__title.css);
+@import url(./__info/search-result__info.css);
+@import url(./__link/search-result__link.css);
+@import url(./__text/search-result__text.css);
+@import url(./__wrapper/search-result__wrapper.css);
+
+.search-result {
+    background: #F5F6F7;
+}
