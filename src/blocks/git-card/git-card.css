@@ -1,0 +1,16 @@
+@import url(./__date/git-card__date.css);
+@import url(./__user/git-card__user.css);
+@import url(./__image/git-card__image.css);
+@import url(./__name/git-card__name.css);
+@import url(./__email/git-card__email.css);
+@import url(./__info/git-card__info.css);
+@import url(./__commit/git-card__commit.css);
+
+.git-card {
+    display: block;
+    padding: 24px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+    color: #1A1B22;
+}

@@ -1,0 +1,19 @@
+.technics__card {
+    margin-right: 45px;
+}
+
+.technics__card:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .technics__card {
+        margin-right: 69px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .technics__card {
+        margin-right: 24px;
+    }
+}

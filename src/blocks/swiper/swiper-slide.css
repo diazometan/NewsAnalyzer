@@ -1,0 +1,22 @@
+.swiper-slide {
+    border-radius: 16px;
+    width: 400px;
+    height: 288px;
+    font-size: 18px;
+    background: #fff;
+    box-shadow: 2px 2px 5px #d1d2d6;
+}
+
+@media screen and (max-width: 1024px) {
+    .swiper-slide {
+        width: 336px;
+        height: 242px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .swiper-slide {
+        width: 288px;
+        height: 264px;
+    }
+}

@@ -1,4 +1,5 @@
-@import url(./_selected/header__link_selected.css);
+@import url(./_selected/header__link_selected_black.css);
+@import url(./_selected/header__link_selected_white.css);
 
 .header__link {
     position: relative;

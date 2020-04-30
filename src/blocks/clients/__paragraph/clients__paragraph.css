@@ -1,0 +1,11 @@
+.clients__paragraph {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 25px 0;
+}
+
+.clients__paragraph:last-child {
+    margin: 0;
+}

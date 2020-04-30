@@ -1,26 +1,25 @@
-a.header__link_selected {
+a.header__link_selected_white {
     color: #fff;
 }
 
-.header__link_selected:before {
+.header__link_selected_white:before {
     content: "";
     position: absolute;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #fff;
     top: 48px;
     width: 68px;
 }
 
 @media screen and (max-width: 1024px) {
-    .header__link_selected:before {
+    .header__link_selected_white:before {
         top: 40px;
         width: 70px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .header__link_selected:before {
+    .header__link_selected_white:before {
         top: 36px;
         width: 61px;
     }
 }
-

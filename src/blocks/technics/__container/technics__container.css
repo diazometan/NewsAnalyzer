@@ -1,0 +1,17 @@
+.technics__container {
+    justify-content: space-between;
+    padding: 80px 200px 97px 104px;
+}
+
+@media screen and (max-width: 1024px) {
+    .technics__container {
+        flex-wrap: wrap;
+        padding: 40px 40px 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .technics__container {
+        padding: 32px 16px 52px;
+    }
+}

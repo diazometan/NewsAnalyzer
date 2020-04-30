@@ -1,0 +1,9 @@
+@import url(./__info/git-history__info.css);
+@import url(./__container/git-history__container.css);
+@import url(./__title/git-history__title.css);
+@import url(./__link/git-history__link.css);
+
+.git-history {
+    background: #F5F6F7;
+    color: #1A1B22;
+}
