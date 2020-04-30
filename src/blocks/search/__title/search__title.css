@@ -4,6 +4,7 @@
     font-weight: normal;
     font-size: 60px;
     line-height: 64px;
+    font-family: 'Roboto Slab';
 }
 
 @media screen and (max-width: 1024px) {

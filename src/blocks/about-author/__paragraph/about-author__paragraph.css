@@ -2,5 +2,15 @@
     font-size: 18px;
     line-height: 24px;
     color: #1A1B22;
-    margin: 0;
+    margin: 0 0 20px 0;
+}
+
+.about-author__paragraph:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .about-author__paragraph {
+        margin: 0;
+    }
 }

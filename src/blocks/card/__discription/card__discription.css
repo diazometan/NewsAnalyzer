@@ -2,5 +2,15 @@
     margin: 0;
     font-size: 16px;
     line-height: 22px;
-    max-width: 352px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1024px) {
+    .card__discription {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
 }

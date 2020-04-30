@@ -1,7 +1,9 @@
 .search__discription {
     margin: 0;
     font-size: 18px;
-    line-height: 24px; 
+    line-height: 24px;
+    font-style: normal;
+    font-weight: normal;
 }
 
 @media screen and (max-width: 1439px) {

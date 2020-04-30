@@ -2,4 +2,23 @@
     font-size: 26px;
     line-height: 30px;
     margin: 12px 0 16px;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1024px) {
+    .card__title {
+        font-size: 22px;
+        line-height: 24px;
+        margin: 12px 0 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .card__title {
+        font-size: 22px;
+        line-height: 26px;
+        margin: 16px 0 10px;
+    }
 }
