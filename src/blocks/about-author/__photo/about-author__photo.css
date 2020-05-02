@@ -1,13 +1,11 @@
 .about-author__photo {
-    width: 464px;
-    border-radius: 1000px;
+    border-radius: 100%;
     margin-right: 56px;
 }
 
 @media screen and (max-width: 1024px) {
     .about-author__photo {
         margin-right: 32px;
-        width: 232px;
     }
 }
 
@@ -15,6 +13,5 @@
     .about-author__photo {
         margin-bottom: 24px;
         margin-right: 0px;
-        width: 272px;
     }
 }

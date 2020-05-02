@@ -1,0 +1,6 @@
+.table__diagram-line {
+    height: 24px;
+    display: flex;
+    background: #2f71e5;
+    align-items: center;
+}

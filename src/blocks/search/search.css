@@ -7,9 +7,10 @@
 @import url(./__container/search__container.css);
 
 .search {
-    background-image: url(../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.png);
+    background-image: url(../../images/MainImage.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
     color: #fff;
+    font-family: 'Roboto', Arial, sans-serif;
 }

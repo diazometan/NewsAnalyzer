@@ -1,44 +1,34 @@
-import './about.css';
+import '../../node_modules/swiper/css/swiper.min.css';
 import Swiper from 'swiper';
 
-const prevButton = document.querySelector('.swiper-button-prev');
-const nextButton = document.querySelector('.swiper-button-next');
+import './about.css';
 
 const swiper = new Swiper('.swiper-container', {
     slidesPerView: 'auto',
     spaceBetween: 16,
-    simulateTouch: false,
-    centeredSlides: true,
+    loop: true,
+    slideToClickedSlide: true,
+    preventClicks: true,
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
-        dynamicBullets: true,
+        dynamicBullets: true
     },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
 
-    /* on: {
-        slideChange() {
-            if (this.activeIndex === 1) {
-                prevButton.style.display = 'none';
-            }
-            else {
-                prevButton.style.display = 'flex';
-            }
-
-            if (this.activeIndex == this.slides.length - 2) {
-                nextButton.style.display = 'none';
-            }
-
-            else {
-                nextButton.style.display = 'flex';
-            }
+    breakpoints: {
+        320: {
+            centeredSlides: false,
+            spaceBetween: 8
+        },
+        1025: {
+            centeredSlides: true,
+            spaceBetween: 16
         }
-    } */
+    }
 });
-
-swiper.slideTo(3)
 
 

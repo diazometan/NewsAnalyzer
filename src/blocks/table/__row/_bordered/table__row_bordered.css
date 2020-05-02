@@ -1,0 +1,4 @@
+.table__row.table__row_bordered {
+    border-bottom: 1px solid #1a1b22;
+    margin-bottom: 16px;
+}

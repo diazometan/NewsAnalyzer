@@ -8,7 +8,9 @@
 @import url(./__link/search-result__link.css);
 @import url(./__text/search-result__text.css);
 @import url(./__container/search-result__container.css);
+@import url(./__wrapper/search-result__wrapper.css);
 
 .search-result {
     background: #F5F6F7;
+    font-family: 'Roboto', Arial, sans-serif;
 }

@@ -1,0 +1,7 @@
+@import url(./__container/rating__container.css);
+@import url(./__title/rating__title.css);
+
+.rating {
+    background: #f5f6f7;
+    font-family: 'Roboto', Arial, sans-serif;
+}

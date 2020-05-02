@@ -2,8 +2,10 @@
 @import url(./__container/git-history__container.css);
 @import url(./__title/git-history__title.css);
 @import url(./__link/git-history__link.css);
+@import url(./__button/git-history__button.css);
 
 .git-history {
     background: #F5F6F7;
     color: #1A1B22;
+    font-family: 'Roboto', Arial, sans-serif;
 }

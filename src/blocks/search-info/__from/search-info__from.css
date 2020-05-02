@@ -1,0 +1,21 @@
+@import url(./_text/search-info__from_text_gray.css);
+
+.search-info__from {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+    .search-info__from {
+        margin-bottom: 64px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .search-info__from {
+        display: none;
+    }
+}

@@ -11,6 +11,12 @@
     padding: 24px;
     box-sizing: border-box;
     cursor: pointer;
-    text-decoration: none;
     color: #1A1B22;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+    .git-card {
+        padding: 16px;
+    }
 }

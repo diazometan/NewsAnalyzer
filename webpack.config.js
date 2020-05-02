@@ -29,7 +29,11 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    isDev ? 'style-loader'
+                    : {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: { publicPath: '../'}
+                    },
                     'css-loader',
                     'postcss-loader',
                 ],
@@ -38,7 +42,8 @@ module.exports = {
                 test: /\.(eot|ttf|woff|woff2)$/,
                 loader: 'file-loader',
                 options: {
-                    name: './vendor/[name].[ext]',
+                    name: './vendor/fonts/[name].[ext]',
+                    publicPath: '../'
                 }
             },
             {

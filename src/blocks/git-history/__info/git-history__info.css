@@ -9,12 +9,6 @@
 
 @media screen and (max-width: 1024px) {
     .git-history__info {
-        padding: 0 40px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .git-history__info {
-        padding: 0 16px;
+        padding: 0 42px 0 0;
     }
 }

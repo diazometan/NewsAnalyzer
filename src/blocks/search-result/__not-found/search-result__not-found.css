@@ -1,7 +1,10 @@
 .search-result__not-found {
-    min-height: 374px;
     display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    min-height: 374px;
+}
+
+@media screen and (max-width: 1024px) {
+    .search-result__not-found {
+        min-height: 300px;
+    }
 }

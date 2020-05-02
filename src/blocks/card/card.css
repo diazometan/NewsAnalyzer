@@ -9,8 +9,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    text-decoration: none;
     color: #1A1B22;
     background: #fff;
     border-radius: 15px;
+    font-family: 'Roboto', Arial, sans-serif;
 }

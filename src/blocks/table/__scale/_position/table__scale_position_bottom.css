@@ -1,0 +1,9 @@
+.table__scale_position_bottom {
+    margin: 16px 0 0;
+}
+
+@media screen and (max-width: 500px) {
+    .table__scale_position_bottom {
+        display: none;
+    }
+}

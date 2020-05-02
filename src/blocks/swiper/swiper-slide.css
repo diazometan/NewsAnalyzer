@@ -7,10 +7,18 @@
     box-shadow: 2px 2px 5px #d1d2d6;
 }
 
+.swiper-slide-active {
+    transform: scale(1.05);
+}
+
 @media screen and (max-width: 1024px) {
     .swiper-slide {
         width: 336px;
         height: 242px;
+    }
+
+    .swiper-slide-active {
+        transform: none;
     }
 }
 
