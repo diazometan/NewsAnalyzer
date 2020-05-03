@@ -1,0 +1,10 @@
+.search-result__status {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: normal;
+    text-align: center;
+    color: #1a1b22;
+    margin: 24px 0 -8px;
+}

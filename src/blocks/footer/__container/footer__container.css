@@ -1,0 +1,17 @@
+.footer__container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 33px 104px 25px;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer__container {
+        padding: 24px 40px 18px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer__container {
+        padding: 20px 16px 22px;
+    }
+}

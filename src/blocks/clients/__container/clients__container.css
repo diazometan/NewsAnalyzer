@@ -1,0 +1,17 @@
+.clients__container {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 521px 94px 104px;
+}
+
+@media screen and (max-width: 1024px) {
+    .clients__container {
+        padding: 30px 40px 26px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .clients__container {
+        padding: 16px;
+    }
+}

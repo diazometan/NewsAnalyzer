@@ -1,0 +1,13 @@
+.search-info__news-count {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 24px 0 4px;
+}
+
+@media screen and (max-width: 767px) {
+    .search-info__news-count {
+        margin: 16px 0 4px;
+    }
+}

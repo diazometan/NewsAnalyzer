@@ -1,0 +1,9 @@
+.technics__cards {
+    display: flex;
+}
+
+@media screen and (max-width: 767px) {
+    .technics__cards {
+        flex-wrap: wrap;
+    }
+}

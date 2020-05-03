@@ -1,0 +1,15 @@
+.git-card__name {
+    margin: 0;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .git-card__name {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

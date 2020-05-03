@@ -1,0 +1,16 @@
+@import url(./__author/card__author.css);
+@import url(./__date/card__date.css);
+@import url(./__discription/card__discription.css);
+@import url(./__image/card__image.css);
+@import url(./__title/card__title.css);
+@import url(./__text/card__text.css);
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #1A1B22;
+    background: #fff;
+    border-radius: 15px;
+    font-family: 'Roboto', Arial, sans-serif;
+}

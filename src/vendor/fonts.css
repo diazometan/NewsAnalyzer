@@ -1,0 +1,21 @@
+@font-face {
+    src: url(./fonts/roboto-regular.woff);
+    font-family: "Roboto";
+}
+
+@font-face {
+    src: url(./fonts/robotoslab-regular.woff);
+    font-family: "Roboto Slab";
+}
+
+@font-face {
+    src: url(./fonts/sourcesanspro-regular.woff);
+    font-family: "Source Sans Pro";
+}
+
+@font-face {
+    src: url(./fonts/roboto-medium.woff);
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+}

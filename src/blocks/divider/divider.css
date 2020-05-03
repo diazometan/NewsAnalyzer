@@ -1,0 +1,7 @@
+@import url(./_background/divider_background_black.css);
+@import url(./_background/divider_background_white.css);
+
+.divider {
+    width: 100%;
+    height: 1px;
+}

@@ -1,0 +1,26 @@
+a.header__link_selected_black {
+    color: #1A1B22;
+}
+
+.header__link_selected_black:before {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid #1A1B22;
+    top: 48px;
+    width: 90px;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__link_selected_black:before {
+        top: 40px;
+        width: 87px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__link_selected_black:before {
+        top: 36px;
+        width: 79px;
+    }
+}
+

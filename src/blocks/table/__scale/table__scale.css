@@ -1,0 +1,15 @@
+@import url(./_position/table__scale_position_top.css);
+@import url(./_position/table__scale_position_bottom.css);
+
+.table__scale {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #b6bcbf;
+}

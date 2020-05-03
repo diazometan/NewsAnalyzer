@@ -1,0 +1,25 @@
+@import url(./__row/table__row.css);
+@import url(./__scale/table__scale.css);
+@import url(./__title/table__title.css);
+@import url(./__month/table__month.css);
+@import url(./__date/table__date.css);
+@import url(./__data/table__data.css);
+@import url(./__diagram-line/table__diagram-line.css);
+@import url(./__diagram-data/table__diagram-data.css);
+
+.table {
+    margin-top: 48px;
+    background: #f5f6f7;
+    width: 100%;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.table tbody {
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    .table {
+        margin-top: 16px;
+    }
+}

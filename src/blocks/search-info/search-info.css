@@ -1,0 +1,11 @@
+@import url(./__container/search-info__container.css);
+@import url(./__article-count/search-info__article-count.css);
+@import url(./__from/search-info__from.css);
+@import url(./__news-count/search-info__news-count.css);
+@import url(./__number/search-info__number.css);
+@import url(./__title/search-info__title.css);
+
+.search-info {
+    color: #1A1B22;
+    font-family: 'Roboto', Arial, sans-serif;
+}

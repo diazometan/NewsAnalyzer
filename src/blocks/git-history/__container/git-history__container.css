@@ -1,0 +1,18 @@
+.git-history__container {
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    padding: 72px 0 80px;
+}
+
+@media screen and (max-width: 1024px) {
+    .git-history__container {
+        padding: 40px 0 40px 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .git-history__container {
+        padding: 32px 0 32px 16px;
+    }
+}

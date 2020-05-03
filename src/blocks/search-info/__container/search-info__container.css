@@ -1,0 +1,19 @@
+.search-info__container {
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+    .search-info__container {
+        padding-top: 32px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .search-info__container {
+        padding-top: 16px;
+        padding-bottom: 24px;
+    }
+}

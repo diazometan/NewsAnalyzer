@@ -1,0 +1,15 @@
+.technics__name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin: 12px 0 8px;
+}
+
+@media screen and (max-width: 1024px) {
+    .technics__name {
+        margin: 40px 0 8px;
+    }
+}

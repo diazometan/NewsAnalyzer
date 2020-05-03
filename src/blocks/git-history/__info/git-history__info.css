@@ -1,0 +1,14 @@
+.git-history__info {
+    display: flex;
+    width: 100%;
+    padding: 0 104px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+@media screen and (max-width: 1024px) {
+    .git-history__info {
+        padding: 0 42px 0 0;
+    }
+}

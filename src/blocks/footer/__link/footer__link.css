@@ -1,0 +1,33 @@
+.footer__link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 40px;
+}
+
+.footer__link:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer__link {
+        font-family: 'Source Sans Pro';
+        margin-right: 25px;
+    }
+
+    .footer__link:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer__link {
+        margin-bottom: 25px;
+        margin-right: 0;
+    }
+
+    .footer__link:last-child {
+        margin-bottom: 0;
+    }
+}

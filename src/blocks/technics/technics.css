@@ -1,0 +1,10 @@
+@import url(./__container/technics__container.css);
+@import url(./__title/technics__title.css);
+@import url(./__cards/technics__cards.css);
+@import url(./__card/technics__card.css);
+@import url(./__name/technics__name.css);
+
+.technics {
+    background: #F5F6F7;
+    font-family: 'Roboto', Arial, sans-serif;
+}

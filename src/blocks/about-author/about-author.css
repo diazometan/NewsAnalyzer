@@ -1,0 +1,11 @@
+@import url(./__photo/about-author__photo.css);
+@import url(./__discription/about-author__discription.css);
+@import url(./__title/about-author__title.css);
+@import url(./__paragraph/about-author__paragraph.css);
+@import url(./__text/about-author__text.css);
+@import url(./__container/about-author__container.css);
+@import url(./__link/about-author__link.css);
+
+.about-author {
+    font-family: 'Roboto', Arial, sans-serif;
+}

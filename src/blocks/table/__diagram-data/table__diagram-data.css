@@ -1,0 +1,16 @@
+.table__diagram-data {
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    margin-left: 6px;
+}
+
+@media screen and (max-width: 767px) {
+    .table__diagram-data {
+        margin-left: 4px;
+    }
+}
