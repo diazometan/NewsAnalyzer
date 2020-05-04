@@ -3,6 +3,17 @@ import Swiper from 'swiper';
 
 import './about.css';
 
+import {config} from '../js/constants/config';
+
+import GithubApi from '../js/modules/GithubApi';
+
+const isDev = NODE_ENV === 'development';
+
+const githubApi = new GithubApi({
+    baseUrl: isDev ? config.githubUrl : config.prodGithubUrl,
+    headers: {}
+});
+
 const swiper = new Swiper('.swiper-container', {
     slidesPerView: 'auto',
     spaceBetween: 16,

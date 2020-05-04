@@ -3,6 +3,19 @@
     height: 338px;
     margin-top: 54px;
     padding-top: 10px;
+    -webkit-mask-image: linear-gradient(
+            to left,
+            rgba(0, 0, 0, 1) calc(100% - 55px),
+            rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 1) calc(100% - 55px),
+            rgba(0, 0, 0, 0)
+        );
+    -webkit-mask-size: 51% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center left, center right;
 }
 
 @media screen and (max-width: 1024px) {
@@ -10,6 +23,7 @@
         margin-top: 32px;
         height: 290px;
         padding-top: 0;
+        -webkit-mask-image: none;
     }
 }
 
