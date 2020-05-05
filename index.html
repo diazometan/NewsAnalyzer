@@ -17,7 +17,7 @@
         />
         <link
             rel="stylesheet"
-            href="./style/index.bbcb782014f867586225.css"
+            href="./style/index.8129907374393f9327c5.css"
         />
     </head>
 
@@ -27,11 +27,12 @@
                 <section class="search">
                     <header class="header">
                         <div class="header__container root__container">
-                            <h2
+                            <a
                                 class="header__logo header__logo_font-color_white"
+                                href="./index.html"
                             >
                                 NewsAnalyzer
-                            </h2>
+                            </a>
                             <div class="header__links">
                                 <a
                                     href="./index.html"
@@ -61,16 +62,19 @@
                                 популярной она&nbsp;была в новостях за прошедшую
                                 неделю.
                             </p>
-                            <form class="search__form">
+                            <form class="search__form" name="search">
                                 <input
                                     type="text"
+                                    name="input"
                                     class="search__input"
                                     placeholder="Введите тему новости"
                                     required
                                 />
                                 <button
                                     type="submit"
+                                    name="button"
                                     class="button search__button"
+                                    disabled
                                 >
                                     Искать
                                 </button>
@@ -85,14 +89,18 @@
                             Wrapper понадобился, так как в финальной сборке благодаря оптимизации
                             search-result__loading и search-result__not-found становились единным целым
                         -->
-                        <div class="search-result__loading search-result__wrapper">
+                        <div
+                            class="search-result__loading search-result__wrapper"
+                        >
                             <i class="circle-preloader"></i>
                             <h4 class="search-result__text">
                                 Идет поиск новостей...
                             </h4>
                         </div>
 
-                        <div class="search-result__not-found search-result__wrapper">
+                        <div
+                            class="search-result__not-found search-result__wrapper"
+                        >
                             <img
                                 src="./images/NotFound.svg"
                                 alt="NotFound"
@@ -106,7 +114,9 @@
                             </p>
                         </div>
 
-                        <div class="search-result__found search-result__wrapper">
+                        <div
+                            class="search-result__found search-result__wrapper"
+                        >
                             <div class="search-result__info">
                                 <h3 class="search-result__title">
                                     Результаты поиска
@@ -118,136 +128,25 @@
                                 >
                             </div>
 
-                            <div class="cards">
-                                <!-- Ссылки заменяться на нормальные, когда будут приходить через API -->
-                                <a href="#" class="card link">
-                                    <img
-                                        src="./images/image_08.png"
-                                        alt="News image"
-                                        class="card__image"
-                                    />
-                                    <div class="card__text">
-                                        <p class="card__date">
-                                            2 августа, 2019
-                                        </p>
-                                        <h4 class="card__title">
-                                            Национальное достояние – парки
-                                        </h4>
-                                        <p class="card__discription">
-                                            В 2016 году Америка отмечала важный
-                                            юбилей: сто лет назад здесь начала
-                                            складываться система национальных
-                                            парков – охраняемых территорий, где
-                                            и сегодня каждый может приобщиться к
-                                            природе.
-                                        </p>
-                                        <p class="card__author">Лента.ру</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="card link">
-                                    <img
-                                        src="./images/image_08.png"
-                                        alt="News image"
-                                        class="card__image"
-                                    />
-                                    <div class="card__text">
-                                        <p class="card__date">
-                                            2 августа, 2019
-                                        </p>
-                                        <h4 class="card__title">
-                                            Национальное достояние – парки
-                                        </h4>
-                                        <p class="card__discription">
-                                            В 2016 году Америка отмечала важный
-                                            юбилей: сто лет назад здесь начала
-                                            складываться система национальных
-                                            парков – охраняемых территорий, где
-                                            и сегодня каждый может приобщиться к
-                                            природе.
-                                        </p>
-                                        <p class="card__author">Лента.ру</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="card link">
-                                    <img
-                                        src="./images/image_08.png"
-                                        alt="News image"
-                                        class="card__image"
-                                    />
-                                    <div class="card__text">
-                                        <p class="card__date">
-                                            2 августа, 2019
-                                        </p>
-                                        <h4 class="card__title">
-                                            Национальное достояние – парки
-                                        </h4>
-                                        <p class="card__discription">
-                                            В 2016 году Америка отмечала важный
-                                            юбилей: сто лет назад здесь начала
-                                            складываться система национальных
-                                            парков – охраняемых территорий, где
-                                            и сегодня каждый может приобщиться к
-                                            природе.
-                                        </p>
-                                        <p class="card__author">Лента.ру</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="card link">
-                                    <img
-                                        src="./images/image_08.png"
-                                        alt="News image"
-                                        class="card__image"
-                                    />
-                                    <div class="card__text">
-                                        <p class="card__date">
-                                            2 августа, 2019
-                                        </p>
-                                        <h4 class="card__title">
-                                            Национальное достояние – парки
-                                        </h4>
-                                        <p class="card__discription">
-                                            В 2016 году Америка отмечала важный
-                                            юбилей: сто лет назад здесь начала
-                                            складываться система национальных
-                                            парков – охраняемых территорий, где
-                                            и сегодня каждый может приобщиться к
-                                            природе.
-                                        </p>
-                                        <p class="card__author">Лента.ру</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="card link">
-                                    <img
-                                        src="./images/image_08.png"
-                                        alt="News image"
-                                        class="card__image"
-                                    />
-                                    <div class="card__text">
-                                        <p class="card__date">
-                                            2 августа, 2019
-                                        </p>
-                                        <h4 class="card__title">
-                                            Национальное достояние – парки
-                                        </h4>
-                                        <p class="card__discription">
-                                            В 2016 году Америка отмечала важный
-                                            юбилей: сто лет назад здесь начала
-                                            складываться система национальных
-                                            парков – охраняемых территорий, где
-                                            и сегодня каждый может приобщиться к
-                                            природе.
-                                        </p>
-                                        <p class="card__author">Лента.ру</p>
-                                    </div>
-                                </a>
-                            </div>
+                            <div class="cards"></div>
 
                             <button
-                                type="submit"
+                                id="more"
+                                type="button"
                                 class="button search-result__button"
                             >
                                 Показать еще
                             </button>
+                        </div>
+
+                        <div
+                            class="search-result__failed search-result__wrapper"
+                        >
+                            <p class="search-result__text">
+                                Во время запроса произошла ошибка. Возможно,
+                                проблема с соединением или сервер недоступен.
+                                Подождите немного и попробуйте ещё раз
+                            </p>
                         </div>
                     </div>
                 </section>
@@ -255,10 +154,16 @@
                 <section class="about-author">
                     <div class="about-author__container root__container">
                         <picture>
-                            <source srcset="./images/author-small.jpg"
+                            <source
+                                srcset="
+                                    ./images/author-small.jpg
+                                "
                                 media="(max-width: 550px)"
                             />
-                            <source srcset="./images/author-medium.jpg"
+                            <source
+                                srcset="
+                                    ./images/author-medium.jpg
+                                "
                                 media="(max-width: 1280px)"
                             />
                             <img
@@ -355,6 +260,19 @@
             </footer>
         </div>
 
-        <script src="./js/index.19a631517f6d367c6073.js"></script>
+        <!-- Шаблон карточки -->
+        <template data-component="NewsCardTemplate">
+            <a href="#" target="_blank" class="card link">
+                <img src="" alt="News image" class="card__image" />
+                <div class="card__text">
+                    <p class="card__date"></p>
+                    <h4 class="card__title"></h4>
+                    <p class="card__discription"></p>
+                    <p class="card__author"></p>
+                </div>
+            </a>
+        </template>
+
+        <script src="./js/index.e4b9b3b2447a5bb72f0c.js"></script>
     </body>
 </html>

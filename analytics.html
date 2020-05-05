@@ -17,16 +17,19 @@
         />
         <link
             rel="stylesheet"
-            href="./style/analytics.423f7cda295f36575398.css"
+            href="./style/analytics.48a1f65ae7ec7db6df0a.css"
         />
     </head>
     <body>
         <div class="root">
             <header class="header">
                 <div class="header__container root__container">
-                    <h2 class="header__logo header__logo_font-color_black">
+                    <a
+                        href="./index.html"
+                        class="header__logo header__logo_font-color_black"
+                    >
                         NewsAnalyzer
-                    </h2>
+                    </a>
                     <div class="header__links">
                         <a
                             href="./index.html"
@@ -56,7 +59,9 @@
                             >
                         </p>
                         <h1 class="search-info__title">
-                            Вы спросили: «Путешествия»
+                            Вы спросили: «<span class="search-info__keyword"
+                                >Путешествия</span
+                            >»
                         </h1>
                         <p class="search-info__news-count">
                             Новостей за неделю:
@@ -73,14 +78,12 @@
                     <div class="rating__container root__container">
                         <h2 class="rating__title">Аналитика по дням</h2>
                         <table class="table">
-                            <tbody>
+                            <tbody class="tbody">
                                 <!-- Заголовки колонок -->
                                 <tr class="table__row table__row_bordered">
                                     <th class="table__title">
                                         ДАТА
-                                        <span class="table__month">
-                                            (Август)
-                                        </span>
+                                        <span class="table__month"></span>
                                     </th>
                                     <th class="table__title">
                                         Количество упоминаний
@@ -88,127 +91,25 @@
                                 </tr>
 
                                 <!-- Шкала сверху -->
-                                <tr class="table__row table__scale_position_top">
+                                <tr
+                                    class="table__row table__scale_position_top"
+                                >
                                     <td></td>
                                     <td class="table__scale">
-                                        <span>0</span><span>25</span><span>50</span>
-                                        <span>75</span><span>100</span>
+                                        <span>0</span><span>25</span
+                                        ><span>50</span> <span>75</span
+                                        ><span>100</span>
                                     </td>
                                 </tr>
-
-                                <!-- Это строки в таблицы будут создаваться в JS -->
-                                <tr class="table__row">
-                                    <td class="table__date">
-                                        19, пн
-                                    </td>
-                                    <td class="table__data">
-                                        <div
-                                            class="table__diagram-line"
-                                            style="width: 15%;"
-                                        >
-                                            <span class="table__diagram-data"
-                                                >15</span
-                                            >
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__date">
-                                        20, вт
-                                    </td>
-                                    <td class="table__data">
-                                        <div
-                                            class="table__diagram-line"
-                                            style="width: 18%;"
-                                        >
-                                            <span class="table__diagram-data"
-                                                >18</span
-                                            >
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__date">
-                                        21, ср
-                                    </td>
-                                    <td class="table__data">
-                                        <div
-                                            class="table__diagram-line"
-                                            style="width: 11%;"
-                                        >
-                                            <span class="table__diagram-data"
-                                                >11</span
-                                            >
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__date">
-                                        22, чт
-                                    </td>
-                                    <td class="table__data">
-                                        <div
-                                            class="table__diagram-line"
-                                            style="width: 39%;"
-                                        >
-                                            <span class="table__diagram-data"
-                                                >39</span
-                                            >
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__date">
-                                        23, пт
-                                    </td>
-                                    <td class="table__data">
-                                        <div
-                                            class="table__diagram-line"
-                                            style="width: 45%;"
-                                        >
-                                            <span class="table__diagram-data"
-                                                >45</span
-                                            >
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__date">
-                                        24, сб
-                                    </td>
-                                    <td class="table__data">
-                                        <div
-                                            class="table__diagram-line"
-                                            style="width: 73%;"
-                                        >
-                                            <span class="table__diagram-data"
-                                                >73</span
-                                            >
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__date">
-                                        25, вс
-                                    </td>
-                                    <td class="table__data">
-                                        <div
-                                            class="table__diagram-line"
-                                            style="width: 34%;"
-                                        >
-                                            <span class="table__diagram-data"
-                                                >34</span
-                                            >
-                                        </div>
-                                    </td>
-                                </tr>
-
                                 <!-- Шкала снизу -->
-                                <tr class="table__row table__scale_position_bottom">
+                                <tr
+                                    class="table__row table__scale_position_bottom"
+                                >
                                     <td></td>
                                     <td class="table__scale">
-                                        <span>0</span><span>25</span><span>50</span>
-                                        <span>75</span><span>100</span>
+                                        <span>0</span><span>25</span
+                                        ><span>50</span> <span>75</span
+                                        ><span>100</span>
                                     </td>
                                 </tr>
                             </tbody>
@@ -222,14 +123,10 @@
                     <p class="footer__copyright">© 2020. Филатов Алексей</p>
 
                     <nav class="footer__menu">
-                        <a
-                            href="./index.html"
-                            class="footer__link link"
+                        <a href="./index.html" class="footer__link link"
                             >Главная</a
                         >
-                        <a
-                            href="./about.html"
-                            class="footer__link link"
+                        <a href="./about.html" class="footer__link link"
                             >О проекте</a
                         >
                         <a
@@ -239,7 +136,7 @@
                             >Яндекс.Практикум</a
                         >
                     </nav>
-                    
+
                     <ul class="footer__social-icons">
                         <li class="footer__social-link link">
                             <a
@@ -265,6 +162,17 @@
             </footer>
         </div>
 
-        <script src="./js/analytics.bc36654f0d938e676449.js"></script>
+        <template data-component="TableRowTemplate">
+            <tr class="table__row">
+                <td class="table__date"></td>
+                <td class="table__data">
+                    <div class="table__diagram-line">
+                        <span class="table__diagram-data"></span>
+                    </div>
+                </td>
+            </tr>
+        </template>
+
+        <script src="./js/analytics.bd5b09b30d5cfa0d448e.js"></script>
     </body>
 </html>
