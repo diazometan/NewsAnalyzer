@@ -9,6 +9,8 @@ export default class SearchInput {
 
         this._submit = this._submit.bind(this);
         this._validate = this._validate.bind(this);
+        this.setFormEnabled = this.setFormEnabled.bind(this);
+        this.setFormDisabled = this.setFormDisabled.bind(this);
     }
 
     addEventListener() {
@@ -18,8 +20,17 @@ export default class SearchInput {
 
     setLSInputValue(value) {
         this._input.value = value;
-        this._button.removeAttribute('disabled');
-        this._button.classList.add('search__button_active');
+        this._enabledButton();
+    }
+
+    setFormDisabled() {
+        this._disableButton();
+        this._toggleInput();
+    }
+
+    setFormEnabled() {
+        this._enabledButton();
+        this._toggleInput();
     }
 
     _submit(event) {
@@ -32,12 +43,25 @@ export default class SearchInput {
             this._input.placeholder = errors.isRequired;
         }
 
+        console.log(this._element.checkValidity());
         if (this._element.checkValidity()) {
-            this._button.removeAttribute('disabled');
-            this._button.classList.add('search__button_active');
+            this._enabledButton();
         } else {
-            this._button.setAttribute('disabled', true);
-            this._button.classList.remove('search__button_active');
+            this._disableButton();
         }
+    }
+
+    _disableButton() {
+        this._button.setAttribute('disabled', true);
+        this._button.classList.remove('search__button_active');
+    }
+
+    _enabledButton() {
+        this._button.removeAttribute('disabled');
+        this._button.classList.add('search__button_active');
+    }
+
+    _toggleInput() {
+        this._input.toggleAttribute('disabled');
     }
 }

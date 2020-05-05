@@ -29,6 +29,14 @@ export default class NewsCardList {
         this._button.addEventListener('click', this._showMore);
     }
 
+    addFormDisabledCallback(setFormDisabled) {
+        this._setFormDisabled = setFormDisabled;
+    }
+
+    addFormEnabledCallback(setFormEnabled) {
+        this._setFormEnabled = setFormEnabled;
+    }
+
     renderFromLS(cards) {
         this._resetContainer();
 
@@ -56,6 +64,7 @@ export default class NewsCardList {
             .catch(() => {
                 this._showError();
             })
+            .finally(() => this._setFormEnabled());
     }
 
     _showMore() {
@@ -90,6 +99,7 @@ export default class NewsCardList {
     }
 
     _startLoading() {
+        this._setFormDisabled();
         this._resultFoundElem.style.display = displayStyles.none;
         this._failedElem.style.display = displayStyles.none;
         this._notFoundElem.style.display = displayStyles.none;

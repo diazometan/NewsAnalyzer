@@ -28,6 +28,9 @@ newsCardList.addEventListener();
 const searchInput = new SearchInput(newsCardList.render, searchFormElem);
 searchInput.addEventListener();
 
+newsCardList.addFormDisabledCallback(searchInput.setFormDisabled);
+newsCardList.addFormEnabledCallback(searchInput.setFormEnabled);
+
 const newsKeyword = dataStorage.getKeyword();
 const newsInStorage = dataStorage.getNews();
 if (newsKeyword && newsInStorage) {
