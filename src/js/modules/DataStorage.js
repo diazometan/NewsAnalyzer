@@ -1,30 +1,28 @@
+import {localStorageItems} from '../constants/constants';
+
 export default class DataStorage {
     constructor() {
-
     }
 
     setNews(news) {
-        localStorage.setItem('news', JSON.stringify(news));
+        localStorage.setItem(localStorageItems.newsArticles, JSON.stringify(news.articles));
+        localStorage.setItem(localStorageItems.newsCount, JSON.stringify(news.totalResults));
     }
 
     getNews() {
-        return JSON.parse(localStorage.getItem('news'));
+        return JSON.parse(localStorage.getItem(localStorageItems.newsArticles));
     }
 
-    removeNews() {
-        localStorage.removeItem('news');
+    getNewsCount() {
+        return localStorage.getItem(localStorageItems.newsCount);
     }
 
-    setKeyWord(keyWord) {
-        localStorage.setItem('keyWord', keyWord);
+    setKeyword(keyword) {
+        localStorage.setItem(localStorageItems.keyword, keyword);
     }
 
-    getKeyWord() {
-        return localStorage.getItem('keyWord');
-    }
-
-    removeKeyWord() {
-        localStorage.removeItem('keyWord');
+    getKeyword() {
+        return localStorage.getItem(localStorageItems.keyword);
     }
 
     clear() {

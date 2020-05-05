@@ -1,5 +1,5 @@
 // Класс обертка, чтобы сгрупировать поля
-export default class NewsCardResponseDto {
+export default class NewsCardDto {
     constructor(author, title, publishedAt, description, urlToImage, urlToNews) {
         this.author = author;
         this.title = title;

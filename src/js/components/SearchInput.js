@@ -1,43 +1,43 @@
 import {errors} from '../constants/constants';
 
 export default class SearchInput {
-    constructor(callback, element) {
+    constructor(sendRequest, element) {
         this._element = element;
-        this._callback = callback;
+        this._input = element.querySelector('.search__input');
+        this._button = element.querySelector('.search__button')
+        this._sendRequest = sendRequest;
 
         this._submit = this._submit.bind(this);
+        this._validate = this._validate.bind(this);
     }
 
     addEventListener() {
         this._element.addEventListener('submit', this._submit);
+        this._element.addEventListener('input', this._validate);
     }
 
-    setStorageInputValue(value) {
-        this._element.querySelector('.search__input').value = value;
+    setLSInputValue(value) {
+        this._input.value = value;
+        this._button.removeAttribute('disabled');
+        this._button.classList.add('search__button_active');
     }
 
     _submit(event) {
         event.preventDefault();
-
-        //TODO: Validation
-        this._callback(this._element.querySelector('.search__input').value);
-        /* if (this._checkValidtion(event)) {
-            this._callback(this._element.querySelector('.search__input').value);
-        } */
+        this._sendRequest(this._input.value);
     }
 
     _validate(event) {
-        const form = event.target.closest('.search__form');
-
-        if (form.elements.input.textLength === 0) {
-            form.elements.input.setCustomValidity(errors.isRequired);
-            //form.elements.button.setAttribute('disabled', true);
-        }
-        else {
-            form.elements.input.setCustomValidity('');
-            //form.elements.button.removeAttribute('disabled');
+        if (event.target.validity.valueMissing) {
+            this._input.placeholder = errors.isRequired;
         }
 
-        return form.checkValidity();
+        if (this._element.checkValidity()) {
+            this._button.removeAttribute('disabled');
+            this._button.classList.add('search__button_active');
+        } else {
+            this._button.setAttribute('disabled', true);
+            this._button.classList.remove('search__button_active');
+        }
     }
 }

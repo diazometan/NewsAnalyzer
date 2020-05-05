@@ -27,11 +27,12 @@
                 <section class="search">
                     <header class="header">
                         <div class="header__container root__container">
-                            <h2
+                            <a
                                 class="header__logo header__logo_font-color_white"
+                                href="./index.html"
                             >
                                 NewsAnalyzer
-                            </h2>
+                            </a>
                             <div class="header__links">
                                 <a
                                     href="./index.html"
@@ -67,11 +68,13 @@
                                     name="input"
                                     class="search__input"
                                     placeholder="Введите тему новости"
+                                    required
                                 />
                                 <button
                                     type="submit"
                                     name="button"
                                     class="button search__button"
+                                    disabled
                                 >
                                     Искать
                                 </button>
@@ -86,14 +89,18 @@
                             Wrapper понадобился, так как в финальной сборке благодаря оптимизации
                             search-result__loading и search-result__not-found становились единным целым
                         -->
-                        <div class="search-result__loading search-result__wrapper">
+                        <div
+                            class="search-result__loading search-result__wrapper"
+                        >
                             <i class="circle-preloader"></i>
                             <h4 class="search-result__text">
                                 Идет поиск новостей...
                             </h4>
                         </div>
 
-                        <div class="search-result__not-found search-result__wrapper">
+                        <div
+                            class="search-result__not-found search-result__wrapper"
+                        >
                             <img
                                 src="<%=require('./images/NotFound.svg').default%>"
                                 alt="NotFound"
@@ -107,7 +114,9 @@
                             </p>
                         </div>
 
-                        <div class="search-result__found search-result__wrapper">
+                        <div
+                            class="search-result__found search-result__wrapper"
+                        >
                             <div class="search-result__info">
                                 <h3 class="search-result__title">
                                     Результаты поиска
@@ -129,16 +138,32 @@
                                 Показать еще
                             </button>
                         </div>
+
+                        <div
+                            class="search-result__failed search-result__wrapper"
+                        >
+                            <p class="search-result__text">
+                                Во время запроса произошла ошибка. Возможно,
+                                проблема с соединением или сервер недоступен.
+                                Подождите немного и попробуйте ещё раз
+                            </p>
+                        </div>
                     </div>
                 </section>
 
                 <section class="about-author">
                     <div class="about-author__container root__container">
                         <picture>
-                            <source srcset="<%=require('./images/author-small.jpg').default%>"
+                            <source
+                                srcset="
+                                    <%=require('./images/author-small.jpg').default%>
+                                "
                                 media="(max-width: 550px)"
                             />
-                            <source srcset="<%=require('./images/author-medium.jpg').default%>"
+                            <source
+                                srcset="
+                                    <%=require('./images/author-medium.jpg').default%>
+                                "
                                 media="(max-width: 1280px)"
                             />
                             <img
@@ -238,11 +263,7 @@
         <!-- Шаблон карточки -->
         <template data-component="NewsCardTemplate">
             <a href="#" target="_blank" class="card link">
-                <img
-                    src=""
-                    alt="News image"
-                    class="card__image"
-                />
+                <img src="" alt="News image" class="card__image" />
                 <div class="card__text">
                     <p class="card__date"></p>
                     <h4 class="card__title"></h4>

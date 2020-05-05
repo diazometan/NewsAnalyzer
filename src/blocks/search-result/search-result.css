@@ -9,6 +9,7 @@
 @import url(./__text/search-result__text.css);
 @import url(./__container/search-result__container.css);
 @import url(./__wrapper/search-result__wrapper.css);
+@import url(./__failed/search-result__failed.css);
 
 .search-result {
     background: #F5F6F7;

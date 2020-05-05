@@ -1,0 +1,10 @@
+.search-result__failed {
+    display: none;
+    min-height: 282px;
+}
+
+@media screen and (max-width: 1024px) {
+    .search-result__failed {
+        min-height: 200px;
+    }
+}

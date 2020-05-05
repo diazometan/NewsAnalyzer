@@ -2,21 +2,24 @@ import {convertDate} from '../utils/data-converter';
 
 export default class NewsCard {
     constructor(newsInfo, cardTemplate) {
-        this.newsInfo = newsInfo;
-        this.cardTemplate = cardTemplate;
+        this._newsInfo = newsInfo;
+        this._cardTemplate = cardTemplate;
     }
 
     create() {
-        this.element = this.cardTemplate.content.cloneNode(true).querySelector('.card');
-        this.element.href = this.newsInfo.urlToNews;
-        this.element.querySelector('.card__image').src = this.newsInfo.urlToImage;
-        
-        const cardElemText = this.element.querySelector('.card__text');
-        cardElemText.querySelector('.card__date').textContent = convertDate(this.newsInfo.publishedAt);
-        cardElemText.querySelector('.card__title').textContent = this.newsInfo.title;
-        cardElemText.querySelector('.card__discription').textContent = this.newsInfo.description;
-        cardElemText.querySelector('.card__author').textContent = this.newsInfo.author;
+        const newsCard = this._cardTemplate.content.cloneNode(true).querySelector('.card');
+        newsCard.href = this._newsInfo.urlToNews;
 
-        return this.element;
+        if (this._newsInfo.urlToImage) {
+            newsCard.querySelector('.card__image').src = this._newsInfo.urlToImage;
+        }
+        
+        const cardElemText = newsCard.querySelector('.card__text');
+        cardElemText.querySelector('.card__date').textContent = convertDate(this._newsInfo.publishedAt);
+        cardElemText.querySelector('.card__title').textContent = this._newsInfo.title;
+        cardElemText.querySelector('.card__discription').textContent = this._newsInfo.description;
+        cardElemText.querySelector('.card__author').textContent = this._newsInfo.author;
+
+        return newsCard;
     }
 }

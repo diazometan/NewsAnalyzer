@@ -1,7 +1,6 @@
 import './index.css';
 
 import {config} from './js/constants/config';
-
 import NewsApi from './js/modules/NewsApi';
 import DataStorage from './js/modules/DataStorage';
 import NewsCard from './js/components/NewsCard';
@@ -9,8 +8,7 @@ import NewsCardList from './js/components/NewsCardList';
 import SearchInput from './js/components/SearchInput';
 
 const searchResultElem = document.querySelector('.search-result');
-const searchForm = document.querySelector('.search__form');
-
+const searchFormElem = document.querySelector('.search__form');
 const newsCardTemplate = document.querySelector('[data-component="NewsCardTemplate"]');
 
 const isDev = NODE_ENV === 'development';
@@ -27,15 +25,12 @@ const newsCardFactory = (newsInfo, newsCardTemplate) => new NewsCard(newsInfo, n
 const newsCardList = new NewsCardList(searchResultElem, newsCardFactory, newsApi, dataStorage, newsCardTemplate);
 newsCardList.addEventListener();
 
-const newsInStorage = dataStorage.getNews();
-if (newsInStorage) {
-    newsCardList.renderDefault(newsInStorage);
-}
-
-const searchInput = new SearchInput(newsCardList.render, searchForm);
+const searchInput = new SearchInput(newsCardList.render, searchFormElem);
 searchInput.addEventListener();
 
-const newsKeyWord = dataStorage.getKeyWord();
-if (newsKeyWord) {
-    searchInput.setStorageInputValue(newsKeyWord);
+const newsKeyword = dataStorage.getKeyword();
+const newsInStorage = dataStorage.getNews();
+if (newsKeyword && newsInStorage) {
+    searchInput.setLSInputValue(newsKeyword);
+    newsCardList.renderFromLS(newsInStorage);
 }

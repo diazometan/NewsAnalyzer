@@ -1,3 +1,16 @@
 .search-result__found {
     display: none;
+    margin: 80px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .search-result__found {
+        margin: 40px 0;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .search-result__found {
+        margin: 32px 0 44px;
+    }
 }
