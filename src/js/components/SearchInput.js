@@ -43,7 +43,6 @@ export default class SearchInput {
             this._input.placeholder = errors.isRequired;
         }
 
-        console.log(this._element.checkValidity());
         if (this._element.checkValidity()) {
             this._enabledButton();
         } else {
