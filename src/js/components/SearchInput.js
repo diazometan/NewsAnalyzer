@@ -35,7 +35,7 @@ export default class SearchInput {
 
     _submit(event) {
         event.preventDefault();
-        this._sendRequest(this._input.value);
+        this._sendRequest(this._input.value.trim());
     }
 
     _validate(event) {
