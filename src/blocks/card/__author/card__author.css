@@ -11,12 +11,12 @@
 
 @media screen and (max-width: 1024px) {
     .card__author {
-        margin: 12px 0 16px;
+        margin: 15px 0 16px;
     }
 }
 
 @media screen and (max-width: 767px) {
     .card__author {
-        margin: 5px 0 20px;
+        margin: 10px 0 20px;
     }
 }

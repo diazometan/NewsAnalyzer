@@ -1,16 +1,12 @@
 .card__discription {
+    flex-grow: 1;
     margin: 0;
     font-size: 16px;
     line-height: 22px;
     font-style: normal;
     font-weight: normal;
-}
-
-@media screen and (max-width: 1024px) {
-    .card__discription {
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
-    }
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
 }

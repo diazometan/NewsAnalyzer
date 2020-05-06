@@ -1,0 +1,11 @@
+.search__button_active {
+    background: #2F71E5;
+}
+
+.search__button_active:hover {
+    background: #347EFF;
+}
+
+.search__button_active:active {
+    background: #2A65CC;
+}

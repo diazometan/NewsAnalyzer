@@ -1,0 +1,14 @@
+.error-block {
+    min-height: 300px;
+    display: none;
+    align-items: center;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .error-block {
+        font-size: 20px;
+        margin-right: 16px;
+        min-height: 180px;
+    }
+}

@@ -2,15 +2,21 @@
     background: #FFFFFF;
     border-radius: 80px;
     padding: 20px 80px;
-    margin: 64px 0 80px;
+    margin-top: 64px;
 }
 
 .search-result__button:hover {
     opacity: 0.8;
 }
 
+@media screen and (max-width: 1024px) {
+    .search-result__button {
+        margin-top: 40px;
+    }
+}
+
 @media screen and (max-width: 530px) {
     .search-result__button {
-        margin: 13px 0 44px;
+        margin-top: 15px;
     }
 }
